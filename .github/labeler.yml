@@ -10,6 +10,12 @@ backend:
 testing:
   - [tests/**/*, jest.config.js]
 
+tooling:
+  -[.github/**/*, .gitignore, .editorconfig, .prettierrc, .eslintrc.js]
+
+docker:
+ - [Dockerfile, docker-compose.yml]
+
 labels:
   - name: documentation
     color: 0075ca

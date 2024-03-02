@@ -1,37 +1,21 @@
 documentation:
-  - docs/**/*
-  - README.md
-  - CHANGELOG.md
-  - CONTRIBUTING.md
-  - CODE_OF_CONDUCT.md
+  - [docs/**/*, README.md, CHANGELOG.md, CONTRIBUTING.md, CODE_OF_CONDUCT.md]
 
 frontend:
-  - src/**/*
-  - public/**/*
-  - vite.config.ts
-  - tsconfig.json
+  - [src/**/*, public/**/*, vite.config.ts, tsconfig.json]
 
 backend:
-  - server/**/*
-  - api/**/*
+  - [server/**/*, api/**/*]
 
-config:
-  - .prettierrc
-  - .eslintrc.js
-  - .env
-  - .env.example
-  - .gitignore
-  - jest.config.js
-  - package.json
-  - yarn.lock
-  - tsconfig.node.json
+testing:
+  - [tests/**/*, jest.config.js]
 
-ci:
-  - .github/workflows/**/*
-
-tooling:
-  - .husky/**/*
-  - .vscode/**/*
-  
-Docker:
-  - Dockerfile
+labels:
+  - name: documentation
+    color: 0075ca
+  - name: frontend
+    color: 2f80ed
+  - name: backend
+    color: 2f80ed
+  - name: testing
+    color: 2f80ed

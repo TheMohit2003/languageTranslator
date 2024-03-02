@@ -3,9 +3,9 @@ name: Node.js CI
 # This specifies when the workflow should run.
 on:
   push:
-    branches: [ master ]
+    branches: [ master , develop ]
   pull_request:
-    branches: [ master ]
+    branches: [ master , develop ]
 
 # This section defines the jobs to run.
 jobs:

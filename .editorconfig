@@ -1,0 +1,37 @@
+# EditorConfig helps developers define and maintain consistent coding styles between different editors and IDEs
+
+# Top-most EditorConfig file
+root = true
+
+# Set default charset to UTF-8
+[*]
+charset = utf-8
+
+# Use spaces instead of tabs for indentation
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.ts]
+indent_style = space
+indent_size = 2
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+[*.css]
+indent_style = space
+indent_size = 2
+
+# Trim trailing whitespace
+[*.{js,ts,html,css}]
+trim_trailing_whitespace = true
+
+# Ensure a newline at the end of each file
+[*.{js,ts,html,css}]
+insert_final_newline = true
+
+# Set line endings to LF (Unix-style)
+[*.{js,ts,html,css}]
+end_of_line = lf
